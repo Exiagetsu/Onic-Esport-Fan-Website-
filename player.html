@@ -1,0 +1,172 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Player</title>
+    <link rel="stylesheet" href="player.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-kiri">
+          <a href="index.html" class="logo-link">
+            <img
+              class="onic-logo"
+              src="images/onic.png"
+              alt="Onic-Esport-Logo"
+            />
+          </a>
+          <div id="box"></div>
+          <a href="https://id-mpl.com/" class="logo-link">
+            <img class="mpl-id" src="images/Mpl id.png" alt="Mpl-id-logo" />
+          </a>
+        </div>
+        <nav class="Navbar-list">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="player.html" class="active">PLAYERS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="player-section">
+      <div class="container">
+        <header class="players-header">
+          <h2>PLAYERS</h2>
+        </header>
+        <div class="filter-wrapper">
+          <div class="custom-select-container">
+            <label for="role-filter">Filter By Role</label>
+            <select id="role-filter" class="styled-select">
+              <option value="All">ALL LANES</option>
+              <option value="Jungler">JUNGLER</option>
+              <option value="Roamer">ROAM</option>
+              <option value="Midlane">MIDLANE</option>
+              <option value="Explane">EXPLANE</option>
+              <option value="Goldlane">GOLDLANE</option>
+            </select>
+          </div>
+        </div>
+        <div class="players-grid">
+          <a href="Kiboy-page/kiboy.html" class="player-link">
+            <article class="players-card">
+              <div data-role="Roamer">
+                <div class="players-images">
+                  <img src="images/Kiboy.png" alt="Kiboy" />
+                </div>
+                <div class="player-info">
+                  <div class="player-role">
+                    <img src="images/roamer.png" class="role-icon" />
+                    <span>Roamer</span>
+                  </div>
+                  <h3 class="player-name">Kiboy</h3>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <a href="Kairi-page/Kairi.html" class="player-link">
+            <article class="players-card">
+              <div data-role="Jungler">
+                <div class="players-images">
+                  <img src="images/Kairi.png" alt="Kairi" />
+                </div>
+                <div class="player-info">
+                  <div class="player-role">
+                    <img src="images/Jungler.png" class="role-icon" />
+                    <span>Jungler</span>
+                  </div>
+                  <h3 class="player-name">Kairi</h3>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <a href="Lutpii-page/lutpii.html" class="player-link">
+            <article class="players-card">
+              <div data-role="Explane">
+                <div class="players-images">
+                  <img src="images/Lutpi.png" alt="Lutpi" />
+                </div>
+                <div class="player-info">
+                  <div class="player-role">
+                    <img src="images/Explane.png" class="role-icon" />
+                    <span>EXP Lane</span>
+                  </div>
+                  <h3 class="player-name">Lutpii</h3>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <a href="Sanz-page/sanz.html" class="player-link">
+            <article class="players-card">
+              <div data-role="Midlane">
+                <div class="players-images">
+                  <img src="images/Sanz.png" alt="Sanz" />
+                </div>
+                <div class="player-info">
+                  <div class="player-role">
+                    <img src="images/midlane.png" class="role-icon" />
+                    <span>Mid Laner</span>
+                  </div>
+                  <h3 class="player-name">Sanz</h3>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <a href="Skylar-page/skylar.html" class="player-link">
+            <article class="players-card">
+              <div data-role="Goldlane">
+                <div class="players-images">
+                  <img src="images/Skylar.png" alt="Skylar" />
+                </div>
+                <div class="player-info">
+                  <div class="player-role">
+                    <img src="images/goldlane.png" class="role-icon" />
+                    <span>Gold Lane</span>
+                  </div>
+                  <h3 class="player-name">Skylar</h3>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <a href="Savero-page/savero.html" class="player-link">
+            <article class="players-card">
+              <div data-role="Goldlane">
+                <div class="players-images">
+                  <img src="images/Savero.png" alt="Savero" />
+                </div>
+                <div class="player-info">
+                  <div class="player-role">
+                    <img src="images/goldlane.png" class="role-icon" />
+                    <span>Gold Lane</span>
+                  </div>
+                  <h3 class="player-name">Savero</h3>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="player.js"></script>
+</html>

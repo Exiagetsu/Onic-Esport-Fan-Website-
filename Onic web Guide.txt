@@ -1,0 +1,316 @@
+Oke. Gue lurusin dulu biar jelas dan nggak ngawang.
+
+Keputusan lo tepat.
+ONIC itu fine sebagai final project. Yang bikin project lo kelihatan murahan bukan karena ONIC, tapi karena:
+
+nggak ada konsep
+
+layout acak
+
+warna asal
+
+struktur HTML berantakan
+
+Sekarang kita bikin ONIC versi profesional, bukan web fans iseng.
+
+🏆 FINAL PROJECT
+“ONIC Esports – Official Team Profile Website”
+
+Konsep: Website profil tim esports profesional
+Fokus: HTML semantic + CSS layout & visual hierarchy
+Target: portfolio-ready junior frontend
+
+🎯 TUJUAN PROJECT (JANGAN DILUPAIN)
+
+Project ini harus nunjukin:
+
+Lo paham struktur website nyata
+
+Lo bisa ngatur konten, bukan cuma ngetik HTML
+
+Lo punya sense layout & konsistensi visual
+
+Kalau ini lolos → masuk portfolio
+Kalau masih kayak web lo sekarang → latihan doang
+
+🧱 STRUKTUR WEBSITE (FORMAT FINAL)
+1️⃣ Header & Navigation
+
+Fungsi: Identitas & navigasi utama
+
+Isi:
+
+Logo ONIC (gambar / text)
+
+Menu:
+
+Home
+
+Team
+
+Achievements
+
+About
+
+Contact
+
+HTML yang diuji:
+
+<header>, <nav>, <ul>, <a>
+
+CSS yang diuji:
+
+Flexbox
+
+Spacing konsisten
+
+Hover effect
+
+Sticky navbar (opsional)
+
+❌ Stop navbar warna tabrakan
+✔ Hitam / abu gelap + aksen kuning ONIC
+
+2️⃣ Hero Section (WAJIB KEREN)
+
+Fungsi: First impression
+
+Isi:
+
+Heading besar:
+“ONIC Esports”
+
+Subtitle:
+The Kings of Indonesian Esports
+
+Tombol:
+
+View Team
+
+Our Achievements
+
+HTML:
+
+<section>, <h1>, <p>, <button>
+
+CSS:
+
+Background image / gradient
+
+Overlay gelap
+
+Centering pakai flexbox
+
+Font size hierarchy
+
+Kalau hero section lo jelek → langsung keliatan amateur.
+
+3️⃣ About ONIC
+
+Fungsi: Cerita singkat & kredibilitas
+
+Isi konten:
+
+Tahun berdiri
+
+Fokus game (MLBB, dll)
+
+Filosofi tim
+
+Reputasi internasional
+
+Contoh teks:
+
+ONIC Esports is one of the most successful esports organizations in Southeast Asia, known for its dominance in Mobile Legends and strong competitive culture.
+
+HTML:
+
+<section>, <article>
+
+CSS:
+
+Two-column layout
+
+Max-width text
+
+Line-height rapi
+
+4️⃣ Team / Players Section (CORE)
+
+Fungsi: Konten utama
+
+Isi:
+
+Player card:
+
+Foto
+
+Nickname
+
+Role
+
+Signature hero (opsional)
+
+Contoh player:
+
+Kairi – Jungler
+
+Sanz – Midlaner
+
+Kiboy – Roamer
+
+HTML:
+
+<section>, <div>, <img>, <h3>, <p>
+
+CSS:
+
+CSS Grid
+
+Card design
+
+Hover effect (scale / shadow)
+
+Ini bagian paling penting buat portfolio.
+
+5️⃣ Achievements Section
+
+Fungsi: Bukti prestasi
+
+Isi:
+
+MPL Champion
+
+MSC
+
+Turnamen internasional
+
+Format:
+
+Trophy icon
+
+Nama turnamen
+
+Tahun
+
+HTML:
+
+<ul>, <li>
+
+CSS:
+
+Grid / flex
+
+Background beda dari section lain
+
+Highlight angka
+
+6️⃣ Timeline / History (OPSIONAL TAPI KEREN)
+
+Fungsi: Storytelling
+
+Isi:
+
+2018 – Founded
+
+2019 – First MPL title
+
+2023 – International dominance
+
+CSS skill:
+
+Vertical timeline
+
+Pseudo-element (::before)
+
+Kalau bisa ini → nilai lo naik drastis.
+
+7️⃣ Contact Section
+
+Fungsi: Simulasi website profesional
+
+Isi form:
+
+Name
+
+Email
+
+Message
+
+Submit button
+
+HTML:
+
+<form>, <label>, <input>, <textarea>
+
+CSS:
+
+Form layout
+
+Focus state
+
+Button styling
+
+8️⃣ Footer
+
+Isi:
+
+© ONIC Esports (Concept Project)
+
+Social media (text/icon)
+
+🎨 DESIGN RULE (WAJIB)
+
+Kalau dilanggar, project turun level.
+
+Warna
+
+Hitam / Dark gray (background)
+
+Kuning ONIC (accent)
+
+Putih (text)
+
+❌ Jangan gradient aneh
+❌ Jangan warna random
+
+Font
+
+Sans-serif modern:
+
+Poppins / Inter / Montserrat
+
+Layout
+
+Max-width (1100–1200px)
+
+Spacing konsisten
+
+Section jelas
+
+🧪 KRITERIA LOLOS PORTFOLIO
+
+Project ini layak masuk portfolio kalau:
+
+Struktur HTML semantic
+
+CSS nggak berantakan
+
+Konsisten warna & font
+
+Bisa lo jelasin logikanya
+
+JUJUR YA
+
+Web ONIC lo sekarang = latihan awal, bukan final
+Project ini = level up pertama lo sebagai frontend
+
+Kalau lo mau next step, gue bisa:
+
+Buatin wireframe per section (teks, detail banget)
+
+Kasih checklist harian ngerjain project ini (7–10 hari)
+
+Review HTML/CSS lo nanti tanpa basa-basi
+
+Pilih satu. Jangan lompat-lompat.

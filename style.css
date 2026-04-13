@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+  background-color: #0f0f0f;
+}
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  background-color: rgba(17, 17, 17, 0.75);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  transition:
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease;
+  z-index: 1000;
+}
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-kiri {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.onic-logo {
+  width: auto;
+  height: 36px;
+}
+#box {
+  height: 36px;
+  opacity: 0.6;
+  width: 2px;
+  background-color: #eaeaea;
+}
+.mpl-id {
+  width: auto;
+  height: 36px;
+}
+.onic-logo,
+.mpl-id {
+  height: 38px;
+  opacity: 0.9;
+}
+.navbar ul {
+  gap: 28px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-link:hover img {
+  opacity: 1;
+  transform: translateY(-1px);
+  transition: all 0.25s ease;
+}
+.navbar a {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  color: #eaeaea;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  padding: 14px 12px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+.navbar a:hover {
+  color: #ffd100;
+}
+.navbar-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background-color: #ffd100;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+.navbar a.active {
+  color: #ffd100;
+}
+.navbar a.active::after {
+  width: 100%;
+}
+.hero {
+  position: relative;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero::after {
+  content: "EST. 2010 // JAKARTA, IDN";
+  position: absolute;
+  bottom: 30px;
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  color: #ffd100;
+  opacity: 0.2; /* Sangat subtle */
+  letter-spacing: 3px;
+}
+.hero-section {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform: translateY(-40px);
+  transition: transform 0.5s ease;
+}
+.slideshow-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1);
+  animation: slideAnimation 18s infinite ease-in-out;
+}
+.slide-1 {
+  background-image:
+    radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(15, 15, 15, 1) 95%
+    ),
+    url("images/Onic-MSC.jpg");
+  animation-delay: 0s;
+  filter: brightness(0.6) contrast(1.05) grayscale(1);
+}
+.slide-2 {
+  background-image:
+    radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(15, 15, 15, 1) 95%
+    ),
+    url("images/onic-gotf.jpg");
+  animation-delay: 6s;
+  filter: brightness(0.6) contrast(1.05) grayscale(1);
+}
+.slide-3 {
+  background-image:
+    radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(15, 15, 15, 1) 95%
+    ),
+    url("images/onic-mpl.jpg");
+  animation-delay: 12s;
+  filter: brightness(0.6) contrast(1.05) grayscale(1);
+}
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.scanline-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, 0.2) 51%
+  );
+  background-size: 100% 4px;
+  z-index: 2;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.hero-title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-title h1 {
+  opacity: 0;
+  font-family: "league-spartan", sans-serif;
+  font-size: clamp(50px, 9vw, 100px);
+  font-style: bold;
+  color: #ffd100;
+  letter-spacing: -2px;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  filter: none;
+  margin-bottom: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.1s;
+  margin-bottom: 12px;
+}
+
+.hero-title p {
+  font-family: "Courier Prime", monospace;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ffd100;
+  letter-spacing: 4px;
+  max-width: 550px;
+  padding: 0px;
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  animation: fadeUp 0.8s ease forwards 0.4s;
+  margin-bottom: 14px;
+}
+.hero-title p::before,
+.hero-title p:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background-color: rgba(255, 209, 0, 0.4);
+}
+.hero-title span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 420px;
+  text-align: center;
+  padding: 0;
+}
+.hero-button {
+  text-transform: uppercase;
+  opacity: 0;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 20 px;
+  display: flex;
+  justify-content: center;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.4s;
+  z-index: 1;
+  gap: 18px;
+}
+.button-1 {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  color: #0f0f0f;
+  background-color: #ffd100;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 10px;
+  transition: all 0.25s ease;
+  transform: skew(-10deg);
+}
+.button-1:hover {
+  transform: skew(-10deg) translateY(-3px);
+  filter: brightness(1.1);
+}
+.button-2 {
+  text-decoration: none;
+  background-color: #00000000;
+  border: 1px solid rgba(255, 204, 0, 0.6);
+  color: rgba(255, 204, 0, 0.85);
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 10px;
+  transition: all 0.25s ease;
+}
+.button-2:hover {
+  background-color: #ffd100;
+  color: #0f0f0f;
+}
+.button-1 span {
+  display: inline-block;
+  transform: skew(10deg);
+}
+.hero-overlay {
+  inset: 0;
+  position: absolute;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(15, 15, 15, 0.8) 0%,
+      rgba(15, 15, 15, 0.3) 40%,
+      rgba(15, 15, 15, 0.95) 100%
+    ),
+    url("images/Onic-MSC.jpg") center / cover no-repeat;
+  filter: blur(3px), saturate(0.8);
+  transform: scale(1.05);
+  opacity: 0.9;
+  background: cover;
+  background-position: center;
+  align-items: center;
+  z-index: 0;
+  pointer-events: none;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
