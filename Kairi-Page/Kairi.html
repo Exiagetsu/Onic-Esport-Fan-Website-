@@ -16,6 +16,24 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/site.webmanifest" />
   </head>
   <body>
     <header class="navbar">
@@ -36,12 +54,20 @@
         <nav class="Navbar-list">
           <ul>
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="../player.html">PLAYERS</a></li>
+            <li><a href="../player.html" class="active">PLAYERS</a></li>
             <li><a href="../about.html">ABOUT</a></li>
           </ul>
         </nav>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </header>  
+      <div class="mobile-menu">
+        <a href="../index.html">HOME</a>
+        <a href="../player.html" class="active">PLAYERS</a>
+        <a href="../about.html">ABOUT</a>
+      </div>
+    </header>
     <section class="Kairi-Page">
 
         <div class="kairi-wrapper">
@@ -92,7 +118,6 @@
   </div>
 </div>  
 </div>  
-            </ul>
             <div class="kairi-video">
                 <iframe src="https://www.youtube.com/embed/f1Bl6hQRdJ8"
                 frameborder="0"
@@ -102,8 +127,7 @@
              </div>
             </div>
         </div>
-      </div>
-      </section>
     </section>
     <script src="Kairi.js"></script>
+    <script src="../navbar.js"></script>
   </body>

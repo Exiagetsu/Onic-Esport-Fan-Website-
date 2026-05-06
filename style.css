@@ -341,3 +341,117 @@ body {
     transform: translateY(0);
   }
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+  z-index: 1100;
+}
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background-color: #ffd100;
+  display: block;
+  transition: all 0.3s ease;
+}
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(13, 13, 13, 0.98);
+  border-top: 1px solid rgba(255, 209, 0, 0.15);
+  padding: 8px 0 16px;
+}
+.mobile-menu.open {
+  display: flex;
+}
+.mobile-menu a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #eaeaea;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: color 0.2s ease;
+}
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  color: #ffd100;
+}
+
+@media (max-width: 768px) {
+  .Navbar-list {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hero {
+    height: 100svh;
+    align-items: center;
+  }
+
+  .hero-section {
+    padding: 0 20px;
+    transform: translateY(-20px);
+  }
+
+  .hero-title h1 {
+    font-size: clamp(60px, 18vw, 90px);
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+
+  .hero-title p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    gap: 8px;
+  }
+
+  .hero-title span {
+    font-size: 11px;
+    max-width: 300px;
+  }
+  .hero-button {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .button-1,
+  .button-2 {
+    font-size: 13px;
+    padding: 10px 22px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-button {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .button-1,
+  .button-2 {
+    width: 80%;
+    text-align: center;
+  }
+}

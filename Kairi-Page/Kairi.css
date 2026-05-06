@@ -366,3 +366,124 @@ body {
 .hero-row span {
   text-decoration: none;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+  z-index: 1100;
+}
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background-color: #ffd100;
+  display: block;
+  transition: all 0.3s ease;
+}
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(13, 13, 13, 0.98);
+  border-top: 1px solid rgba(255, 209, 0, 0.15);
+  padding: 8px 0 16px;
+}
+.mobile-menu.open {
+  display: flex;
+}
+.mobile-menu a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #eaeaea;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: color 0.2s ease;
+}
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  color: #ffd100;
+}
+@media (max-width: 768px) {
+  .Navbar-list {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .Kairi-Page {
+    padding: 40px 16px 60px;
+    align-items: flex-start;
+  }
+  .kairi-wrapper {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 0 4px;
+  }
+
+  .Kairi-gallery,
+  .kairi-gallery {
+    width: 100%;
+  }
+  .gallery-item {
+    flex: 0 0 100%;
+    aspect-ratio: 4 / 5;
+  }
+  .kairi-right {
+    max-width: 100%;
+  }
+  .profile-title {
+    font-size: 38px;
+    letter-spacing: 5px;
+  }
+  .profile-meta {
+    font-size: 11px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .profile-desc {
+    font-size: 14px;
+  }
+  .kairi-video iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .hero-list {
+    gap: 10px;
+  }
+  .hero-list img {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .Kairi-Page {
+    padding: 28px 12px 48px;
+  }
+  .profile-title {
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+  .kairi-video iframe {
+    height: 180px;
+  }
+  .gallery-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}

@@ -472,7 +472,7 @@ body {
 .onic-logo-circle {
   width: 65px;
   height: 65px;
-  background-color: #ffcc00; /* Kuning ONIC */
+  background-color: #ffcc00;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -520,9 +520,9 @@ body {
 }
 .social-icon:hover {
   color: #0a0a0a;
-  background-color: #ffcc00; /* Berubah jadi kuning saat disentuh */
+  background-color: #ffcc00;
   border-color: #ffcc00;
-  transform: translateY(-5px); /* Efek melompat dikit */
+  transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
 }
 @media (max-width: 768px) {
@@ -530,5 +530,164 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 30px;
+  }
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+  z-index: 1100;
+}
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background-color: #ffd100;
+  display: block;
+  transition: all 0.3s ease;
+}
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(13, 13, 13, 0.98);
+  border-top: 1px solid rgba(255, 209, 0, 0.15);
+  padding: 8px 0 16px;
+}
+.mobile-menu.open {
+  display: flex;
+}
+.mobile-menu a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #eaeaea;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: color 0.2s ease;
+}
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  color: #ffd100;
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 48px 20px;
+  }
+  .about::after {
+    margin-top: 48px;
+  }
+  .vision {
+    padding: 28px 20px;
+    font-size: 15px;
+    margin: 0 0 24px;
+  }
+  .main-about {
+    font-size: 14px;
+    margin-top: 28px;
+    padding: 0 4px;
+  }
+  .trophy-section {
+    padding: 60px 0 60px;
+  }
+  .section-title {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    padding: 0 20px;
+  }
+  .trophy-card {
+    flex: 0 0 300px;
+  }
+  .trophy-info h4 {
+    font-size: 0.8rem;
+  }
+  .team-mini img {
+    height: 36px;
+  }
+  .score-number {
+    font-size: 1.8em;
+  }
+  .stat {
+    padding: 40px 20px 56px;
+  }
+  .stat-header h2 {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+  .stat-header h3 {
+    font-size: clamp(15px, 4vw, 22px);
+  }
+  .stats-grid {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+  }
+  .stat-number {
+    font-size: clamp(30px, 8vw, 44px);
+  }
+  .social-media {
+    padding: 48px 20px;
+  }
+  .social-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+  }
+  .branding-wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .social-branding .main-title {
+    font-size: 1.4rem;
+  }
+  .social-links {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .social-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .trophy-card {
+    flex: 0 0 240px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 12px;
+  }
+  .vision {
+    padding: 24px 16px;
+    font-size: 14px;
+  }
+  .vision::before {
+    font-size: 48px;
+    top: -14px;
+  }
+}
+@media (max-width: 768px) {
+  .Navbar-list {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
   }
 }

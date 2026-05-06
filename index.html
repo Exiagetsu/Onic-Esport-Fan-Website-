@@ -4,6 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onic Esport</title>
     <link rel="stylesheet" href="style.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ONIC Esports" />
+    <meta
+      property="og:description"
+      content="Official website of ONIC Esports."
+    />
+    <meta
+      property="og:image"
+      content="https://onic-esport-fan-website.vercel.app/images/Preview-web.png"
+    />
+    <meta
+      property="og:url"
+      content="https://onic-esport-fan-website.vercel.app/index.html"
+    />
+    <meta property="og:site_name" content="ONIC Esports" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
       rel="stylesheet"
@@ -20,6 +35,24 @@
       href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
   </head>
   <body>
     <header class="navbar">
@@ -44,6 +77,16 @@
             <li><a href="about.html">ABOUT</a></li>
           </ul>
         </nav>
+
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <a href="index.html" class="active">HOME</a>
+        <a href="player.html">PLAYERS</a>
+        <a href="about.html">ABOUT</a>
       </div>
     </header>
     <section class="hero">
@@ -68,5 +111,6 @@
         </div>
       </div>
     </section>
+    <script src="navbar.js"></script>
   </body>
 </html>

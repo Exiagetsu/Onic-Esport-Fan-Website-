@@ -384,3 +384,142 @@ body {
 .player-link:nth-child(6) {
   animation-delay: 0.6s;
 }
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background-color: #ffd100;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(13, 13, 13, 0.98);
+  border-top: 1px solid rgba(255, 209, 0, 0.15);
+  padding: 8px 0 16px;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #eaeaea;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: color 0.2s ease;
+}
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  color: #ffd100;
+}
+@media (max-width: 768px) {
+  .Navbar-list {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .player-section {
+    padding: 60px 0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .filter-wrapper {
+    padding: 0;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+  .custom-select-container {
+    width: 100%;
+    min-width: 100%;
+  }
+  .styled-select {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .players-images {
+    min-height: 260px;
+  }
+  .player-name {
+    font-size: 18px;
+  }
+  .player-role {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+  .role-icon {
+    height: 10px;
+    width: 10px;
+  }
+  .player-info {
+    padding: 14px 16px 18px;
+  }
+  .players-header h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .players-images {
+    min-height: 200px;
+  }
+  .player-name {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+  .player-role {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+  .player-info {
+    padding: 10px 12px 14px;
+  }
+}

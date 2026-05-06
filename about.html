@@ -24,32 +24,54 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
   </head>
   <body>
     <header class="navbar">
-      <div class="navbar-container">
-        <div class="navbar-kiri">
-          <a href="index.html" class="logo-link">
-            <img
-              class="onic-logo"
-              src="images/onic.png"
-              alt="Onic-Esport-Logo"
-            />
-          </a>
-          <div id="box"></div>
-          <a href="https://id-mpl.com/" class="logo-link">
-            <img class="mpl-id" src="images/Mpl id.png" alt="Mpl-id-logo" />
-          </a>
-        </div>
-        <nav class="Navbar-list">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="player.html">PLAYERS</a></li>
-            <li><a href="about.html" class="active">ABOUT</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <div class="navbar-container">
+    <div class="navbar-kiri">
+      <a href="index.html" class="logo-link">
+        <img class="onic-logo" src="images/onic.png" alt="Onic-Esport-Logo" />
+      </a>
+      <div id="box"></div>
+      <a href="https://id-mpl.com/" class="logo-link">
+        <img class="mpl-id" src="images/Mpl id.png" alt="Mpl-id-logo" />
+      </a>
+    </div>
+    <nav class="Navbar-list">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="player.html">PLAYERS</a></li>
+        <li><a href="about.html" class="active">ABOUT</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">HOME</a>
+    <a href="player.html">PLAYERS</a>
+    <a href="about.html" class="active">ABOUT</a>
+  </div>
+</header>
 
     <section class="about-wrapper">
       <section class="about">
@@ -481,7 +503,7 @@
         </div>
       </div>
     </section>
-
     <script src="about.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>
