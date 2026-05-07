@@ -400,58 +400,100 @@ body {
   .hamburger {
     display: flex;
   }
+
+  /* Lock scroll di halaman index */
+  html,
+  body {
+    height: 100%;
+    overflow: hidden; /* cegah scroll */
+  }
+
   .hero {
-    height: 100svh;
+    height: calc(100svh - 54px);
+    min-height: calc(100svh - 54px);
+    max-height: calc(100svh - 54px);
+    overflow: hidden;
+    display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .hero-section {
-    padding: 0 20px;
-    transform: translateY(-20px);
+    position: relative;
+    transform: translateY(-15%); /* sedikit di atas tengah */
+    width: 100%;
+    padding: 0 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    align-items: center;
   }
 
   .hero-title h1 {
-    font-size: clamp(60px, 18vw, 90px);
+    font-size: clamp(64px, 20vw, 90px);
+    text-align: center;
     letter-spacing: -1px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .hero-title p {
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 3px;
-    gap: 8px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .hero-title span {
-    font-size: 11px;
+    font-size: 12px;
+    text-align: center;
     max-width: 300px;
   }
+
   .hero-button {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
-    justify-content: center;
-    margin-top: 16px;
+    margin-top: 24px;
+    width: 100%;
   }
 
-  .button-1,
+  .button-1 {
+    font-size: 13px;
+    padding: 12px 0;
+    margin: 0;
+    width: 75%;
+    text-align: center;
+  }
+
   .button-2 {
     font-size: 13px;
-    padding: 10px 22px;
+    padding: 12px 0;
     margin: 0;
+    width: 75%;
+    text-align: center;
+    border: 1.5px solid rgba(255, 204, 0, 0.9);
+    color: rgba(255, 204, 0, 1);
   }
 }
 
 @media (max-width: 400px) {
-  .hero-button {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  .hero {
+    height: calc(100svh - 54px);
+    min-height: calc(100svh - 54px);
   }
-
+  .hero-section {
+    transform: translateY(-20%);
+    padding: 0 0px;
+  }
+  .hero-title h1 {
+    font-size: clamp(56px, 18vw, 72px);
+  }
   .button-1,
   .button-2 {
     width: 80%;
-    text-align: center;
   }
 }
