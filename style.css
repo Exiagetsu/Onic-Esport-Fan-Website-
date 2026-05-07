@@ -400,12 +400,10 @@ body {
   .hamburger {
     display: flex;
   }
-
-  /* Lock scroll di halaman index */
   html,
   body {
     height: 100%;
-    overflow: hidden; /* cegah scroll */
+    overflow: hidden;
   }
 
   .hero {
@@ -420,7 +418,7 @@ body {
 
   .hero-section {
     position: relative;
-    transform: translateY(-15%); /* sedikit di atas tengah */
+    transform: translateY(-15%);
     width: 100%;
     padding: 0 28px;
     display: flex;
